@@ -90,7 +90,7 @@ today!
 
         {/* Subtitle */}
         <p className="text-sm font-semibold text-gray-600 tracking-wide">
-          WE CAN'T WAIT TO MEET YOU
+          WE CAN&apos;T WAIT TO MEET YOU
         </p>
 
         {/* Heading */}
