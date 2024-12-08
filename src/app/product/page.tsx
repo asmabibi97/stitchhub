@@ -3,7 +3,7 @@
 import React from 'react';
 import Header from '../Component/shop/Header';
 import Image from 'next/image';
-import { IoIosArrowForward } from 'react-icons/io';
+
 import { FaStripe, FaAws, FaReddit, FaCar, FaHooli } from 'react-icons/fa';
 import Footer from '../Component/Footer';
 
