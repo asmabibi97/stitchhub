@@ -2,6 +2,7 @@ import React from 'react'
 import Header2 from '../Component/Aboutus/Header2'
 import Image from 'next/image'
 import { FaFacebook, FaInstagram , FaTwitter ,FaLinkedin} from 'react-icons/fa';
+import Footer from '../Component/Footer';
 
 function team() {
   return (
@@ -18,7 +19,7 @@ function team() {
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl">
-    {/* First image takes the whole first column */}
+
     <div className="md:col-span-1 md:row-span-2 overflow-hidden">
       <Image
         src="/images/unsplash_Lks7vei-eAg.png"
@@ -29,7 +30,7 @@ function team() {
       />
     </div>
 
-    {/* Next two images side by side */}
+    
     <div className="overflow-hidden">
       <Image
         src="/images/unsplash_gMsnXqILjp4.png"
@@ -49,7 +50,7 @@ function team() {
       />
     </div>
 
-    {/* Next two images below the previous two */}
+    
     <div className="overflow-hidden">
       <Image
         src="/images/unsplash_PSmDDeXaEWE.png"
@@ -86,7 +87,7 @@ function team() {
     {/* Team Member 1 */}
     <div className="text-center">
       <Image
-        src="/images/team-1-user-1.jpg"
+        src="/images/team-1-user-1 (2).jpg"
         alt="Team Member 1"
         width={200}
         height={200}
@@ -110,7 +111,7 @@ function team() {
     {/* Team Member 2 */}
     <div className="text-center">
       <Image
-        src="/images/team-1-user-2.jpg"
+        src="/images/team-1-user-2 (5).jpg"
         alt="Team Member 2"
         width={200}
         height={200}
@@ -160,7 +161,7 @@ function team() {
     {/* Team Member 1 */}
     <div className="text-center">
       <Image
-        src="/images/team-1-user-1.jpg"
+        src="/images/team-1-user-3.jpg"
         alt="Team Member 1"
         width={200}
         height={200}
@@ -184,7 +185,7 @@ function team() {
     {/* Team Member 2 */}
     <div className="text-center">
       <Image
-        src="/images/team-1-user-2.jpg"
+        src="/images/team-1-user-2 (2).jpg"
         alt="Team Member 2"
         width={200}
         height={200}
@@ -208,7 +209,7 @@ function team() {
     {/* Team Member 3 */}
     <div className="text-center">
       <Image
-        src="/images/team-1-user-3.jpg"
+        src="/images/team-1-user-1.jpg"
         alt="Team Member 3"
         width={200}
         height={200}
@@ -229,6 +230,83 @@ function team() {
       </div>
     </div>
   </div>
+{/* /////////team col3/////////// */}
+<div className="grid grid-cols-1 md:grid-cols-3 gap-0 mt-14">
+    {/* Team Member 1 */}
+    <div className="text-center">
+      <Image
+        src="/images/team-1-user-2.jpg"
+        alt="Team Member 1"
+        width={200}
+        height={200}
+        className="mx-auto"
+      />
+      <h3 className="mt-4 text-xl font-semibold text-gray-800">Username</h3>
+      <p className="text-gray-500">Profession</p>
+      <div className="flex justify-center space-x-3 mt-3">
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaFacebook size={20} />
+        </a>
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaInstagram size={20} />
+        </a>
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaTwitter size={20} />
+        </a>
+      </div>
+    </div>
+
+    {/* Team Member 2 */}
+    <div className="text-center">
+      <Image
+        src="/images/team-1-user-2 (4).jpg"
+        alt="Team Member 2"
+        width={200}
+        height={200}
+        className="mx-auto"
+      />
+      <h3 className="mt-4 text-xl font-semibold text-gray-800">Username</h3>
+      <p className="text-gray-500">Profession</p>
+      <div className="flex justify-center space-x-3 mt-3">
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaFacebook size={20} />
+        </a>
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaInstagram size={20} />
+        </a>
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaTwitter size={20} />
+        </a>
+      </div>
+    </div>
+
+    {/* Team Member 3 */}
+    <div className="text-center">
+      <Image
+        src="/images/team-1-user-3 (2).jpg"
+        alt="Team Member 3"
+        width={200}
+        height={200}
+        className="mx-auto"
+      />
+      <h3 className="mt-4 text-xl font-semibold text-gray-800">Username</h3>
+      <p className="text-gray-500">Profession</p>
+      <div className="flex justify-center space-x-3 mt-3">
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaFacebook size={20} />
+        </a>
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaInstagram size={20} />
+        </a>
+        <a href="#" className="text-blue-600 hover:text-blue-800">
+          <FaTwitter size={20} />
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
 
      {/* ////////////////////14 days trial section///////////// */}
@@ -258,7 +336,7 @@ function team() {
 </section>
 
 
-
+<Footer/>
     </div>
   )
 }

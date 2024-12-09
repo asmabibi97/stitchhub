@@ -64,7 +64,7 @@ function PricingPage() { // Updated name
               <p className="mt-4 text-3xl font-extrabold">9.99 $</p>
               <p className="text-sm mt-2">Per Month</p>
               <div className="flex justify-center items-center mt-4">
-                <FaCheckCircle className="mr-2" />
+                <FaCheckCircle className="mr-2 text-green-500" />
                 <p className="text-sm">Unlimited product updates</p>
               </div>
               <button className="mt-6 w-full py-2 bg-blue-500 text-white rounded-md">Choose Plan</button>
