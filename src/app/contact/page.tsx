@@ -2,6 +2,8 @@ import React from 'react'
 import Header2 from '../Component/Aboutus/Header2'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaArrowDown } from 'react-icons/fa';
+import { IoMdArrowDown } from "react-icons/io";
+
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import Footer from '../Component/Footer';
 function contact() {
@@ -84,8 +86,8 @@ today!
           <div className="w-full bg-white py-16">
       <div className="text-center">
         {/* Arrow Icon from React Icons */}
-        <div className="mb-4 flex justify-center">
-          <FaArrowDown className="w-8 h-8 text-blue-500 animate-bounce" />
+        <div className="mb-4 flex justify-center rotate-45 scale-x-[-1]	">
+          <IoMdArrowDown  className="w-8 h-8 text-blue-500 animate-bounce" />
         </div>
 
         {/* Subtitle */}

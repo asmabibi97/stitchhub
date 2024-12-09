@@ -11,51 +11,54 @@ function Editiorpick() {
       Problems trying to resolve the conflict between
     </p>
   </div>
+{/* Images Section */}
+<div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 mt-8 space-y-6 sm:space-y-0">
+  {/* First Image (Wider Image) */}
+  <div
+    className="relative w-screen sm:w-[509px] h-[300px] sm:h-[500px] bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('/images/filter.PNG')" }}
+  >
+    <button className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 font-bold">
+      Men
+    </button>
+  </div>
 
-  {/* Images Section */}
-  <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 mt-8 space-y-6 sm:space-y-0">
-    {/* First Image (Wider Image) */}
+  {/* Second Image (Standard Size) */}
+  <div
+    className="relative w-screen sm:w-[248px] h-[300px] sm:h-[500px] bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('/images/filter (1).png')" }}
+  >
+    <button className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 font-bold">
+      Women
+    </button>
+  </div>
+
+  {/* Third Column (Two Stacked Images) */}
+  <div className="flex flex-col space-y-6">
+    {/* Top Image */}
     <div
-      className="relative bg-cover bg-center w-full sm:w-[509px] h-[300px] sm:h-[500px] bg-no-repeat"
-      style={{ backgroundImage: "url('/images/filter.PNG')" }}
+      className="relative w-screen sm:w-[248px] h-[200px] sm:h-[240px] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/filter (2).png')" }}
     >
       <button className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 font-bold">
-        Men
+        ACCESSORIES
       </button>
     </div>
 
-    {/* Second Image (Standard Size) */}
+    {/* Bottom Image */}
     <div
-      className="relative bg-cover bg-center w-full sm:w-[248px] h-[300px] sm:h-[500px] bg-no-repeat"
-      style={{ backgroundImage: "url('/images/filter (1).png')" }}
+      className="relative w-screen sm:w-[248px] h-[200px] sm:h-[240px] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/filter (3).png')" }}
     >
       <button className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 font-bold">
-        Women
+        Kids
       </button>
-    </div>
-
-    {/* Third Column (Two Stacked Images) */}
-    <div className="flex flex-col space-y-6">
-      {/* Top Image */}
-      <div
-        className="relative bg-cover bg-center w-full sm:w-[248px] h-[200px] sm:h-[240px] bg-no-repeat"
-        style={{ backgroundImage: "url('/images/filter (2).png')" }}
-      >
-        <button className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 font-bold">
-          ACCESSORIES
-        </button>
-      </div>
-      {/* Bottom Image */}
-      <div
-        className="relative bg-cover bg-center w-full sm:w-[248px] h-[200px] sm:h-[240px] bg-no-repeat"
-        style={{ backgroundImage: "url('/images/filter (3).png')" }}
-      >
-        <button className="absolute bottom-4 left-4 bg-white text-black px-4 py-2 font-bold">
-          Kids
-        </button>
-      </div>
     </div>
   </div>
+</div>
+
+
+
 </div>
 
 

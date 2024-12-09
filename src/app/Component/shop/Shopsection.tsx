@@ -2,11 +2,10 @@
 
 import { AiOutlineAppstore, AiOutlineBars } from 'react-icons/ai';
 import { BiChevronDown } from 'react-icons/bi';
-import { FaStripe, FaAws, FaReddit, FaCar } from 'react-icons/fa'; //  icons for Lyft, Stripe, AWS, Reddit, and Twitter
 
-import { FaHooli } from "react-icons/fa";
 
 import Image from 'next/image';
+import Logos from './Logos';
 
 const ShopSection = () => {
   return (
@@ -116,34 +115,8 @@ const ShopSection = () => {
           </button>
         </div>
       </div>
-
-      {/* Logos Section with React Icons */}
-      <div className="flex flex-wrap justify-center items-center gap-8 py-8">
-        {/* Hooli Logo (custom placeholder icon) */}
-        <div className="w-24 h-12 flex justify-center items-center">
-          <FaHooli className="text-6xl text-gray-600" /> 
-        </div>
-
-        {/* Lyft Logo (car icon as a placeholder for Lyft) */}
-        <div className="w-24 h-12 flex justify-center items-center">
-          <FaCar className="text-6xl text-gray-600" /> 
-        </div>
-
-        {/* Stripe Logo */}
-        <div className="w-24 h-12 flex justify-center items-center">
-          <FaStripe className="text-6xl text-gray-600" />
-        </div>
-
-        {/* AWS Logo */}
-        <div className="w-24 h-12 flex justify-center items-center">
-          <FaAws className="text-6xl text-gray-600" /> {/* Increased size */}
-        </div>
-
-        {/* Reddit Logo */}
-        <div className="w-24 h-12 flex justify-center items-center">
-          <FaReddit className="text-6xl text-gray-600" /> {/* Increased size */}
-        </div>
-      </div>
+<Logos/>
+     
     </div>
   );
 };

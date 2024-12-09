@@ -75,7 +75,7 @@ const Navbar = () => {
 
           {/* Icons Section */}
           <div className="flex items-center space-x-4">
-            <Link href="/login" className="flex items-center hover:text-blue-600">
+            <Link href="/login" className="md:flex items-center hover:text-blue-600 hidden">
               <BiUser className="mr-1" /> Login / Register
             </Link>
             <a href="#" className="flex items-center hover:text-blue-600">

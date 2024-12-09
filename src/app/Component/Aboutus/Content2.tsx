@@ -4,6 +4,7 @@ import { FaTwitter, FaStripe, FaAws, FaReddit, FaCar } from 'react-icons/fa';
 import { FaFacebook, FaInstagram} from 'react-icons/fa';
 
 import { FaHooli } from "react-icons/fa";
+import Logos from '../shop/Logos';
 
 const Content2 = () => {
   return (
@@ -67,18 +68,19 @@ const Content2 = () => {
         </div>
       </div>
     </div>
-{/* //////////////////////////// meet our team section ////////////////////////////////// */}
-<div className="px-4 md:px-16 py-16">
+{/*///////////////////////////// Meet Our Team Section////////// */}
+{/* Meet Our Team Section */}
+<div className="px-6 md:px-16 py-12 bg-gray-100">
   {/* Heading and Paragraph */}
-  <div className="text-center mb-12">
-    <h2 className="text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
-    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+  <div className="text-center mb-8">
+    <h2 className="text-4xl font-bold text-gray-800 mb-2">Meet Our Team</h2>
+    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
       Our team consists of talented professionals committed to delivering excellence and creating meaningful experiences.
     </p>
   </div>
 
   {/* Team Members */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-8">
     {/* Team Member 1 */}
     <div className="text-center">
       <Image
@@ -88,9 +90,9 @@ const Content2 = () => {
         height={200}
         className="mx-auto"
       />
-      <h3 className="mt-4 text-xl font-semibold text-gray-800">Username</h3>
+      <h3 className="mt-2 text-xl font-semibold text-gray-800">Username</h3>
       <p className="text-gray-500">Profession</p>
-      <div className="flex justify-center space-x-3 mt-3">
+      <div className="flex justify-center space-x-3 mt-2">
         <a href="#" className="text-blue-600 hover:text-blue-800">
           <FaFacebook size={20} />
         </a>
@@ -112,9 +114,9 @@ const Content2 = () => {
         height={200}
         className="mx-auto"
       />
-      <h3 className="mt-4 text-xl font-semibold text-gray-800">Username</h3>
+      <h3 className="mt-2 text-xl font-semibold text-gray-800">Username</h3>
       <p className="text-gray-500">Profession</p>
-      <div className="flex justify-center space-x-3 mt-3">
+      <div className="flex justify-center space-x-3 mt-2">
         <a href="#" className="text-blue-600 hover:text-blue-800">
           <FaFacebook size={20} />
         </a>
@@ -136,9 +138,9 @@ const Content2 = () => {
         height={200}
         className="mx-auto"
       />
-      <h3 className="mt-4 text-xl font-semibold text-gray-800">Username</h3>
+      <h3 className="mt-2 text-xl font-semibold text-gray-800">Username</h3>
       <p className="text-gray-500">Profession</p>
-      <div className="flex justify-center space-x-3 mt-3">
+      <div className="flex justify-center space-x-3 mt-2">
         <a href="#" className="text-blue-600 hover:text-blue-800">
           <FaFacebook size={20} />
         </a>
@@ -167,33 +169,7 @@ const Content2 = () => {
     </p>
   </div>
 
-  {/* Logos Section */}
-  <div className="flex flex-wrap justify-center items-center gap-8 px-4">
-    {/* Hooli Logo */}
-    <div className="w-24 h-24 flex justify-center items-center">
-      <FaHooli className="text-6xl text-gray-600" />
-    </div>
-
-    {/* Lyft Logo */}
-    <div className="w-24 h-24 flex justify-center items-center">
-      <FaCar className="text-6xl text-gray-600" />
-    </div>
-
-    {/* Stripe Logo */}
-    <div className="w-24 h-24 flex justify-center items-center">
-      <FaStripe className="text-6xl text-gray-600" />
-    </div>
-
-    {/* AWS Logo */}
-    <div className="w-24 h-24 flex justify-center items-center">
-      <FaAws className="text-6xl text-gray-600" />
-    </div>
-
-    {/* Reddit Logo */}
-    <div className="w-24 h-24 flex justify-center items-center">
-      <FaReddit className="text-6xl text-gray-600" />
-    </div>
-  </div>
+  <Logos/>
 </div>
 
 {/* ////////////////////////////two column section///////////////////////////////////// */}
