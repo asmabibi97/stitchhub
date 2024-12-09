@@ -1,5 +1,4 @@
-import { FaTwitter, FaStripe, FaAws, FaReddit, FaCar } from 'react-icons/fa'; // icons for Lyft, Stripe, AWS, Reddit, and Twitter
-import { FaHooli } from "react-icons/fa";
+
 import Footer from '../Component/Footer';
 import Image from 'next/image';
 import Header from '../Component/shop/Header';

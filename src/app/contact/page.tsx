@@ -1,7 +1,7 @@
 import React from 'react'
 import Header2 from '../Component/Aboutus/Header2'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaArrowDown } from 'react-icons/fa';
+
 import { IoMdArrowDown } from "react-icons/io";
 
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";

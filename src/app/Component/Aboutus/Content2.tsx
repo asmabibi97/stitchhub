@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaTwitter, FaStripe, FaAws, FaReddit, FaCar } from 'react-icons/fa';
-import { FaFacebook, FaInstagram} from 'react-icons/fa';
 
-import { FaHooli } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa';
+
+
 import Logos from '../shop/Logos';
 
 const Content2 = () => {
