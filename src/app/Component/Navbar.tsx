@@ -6,9 +6,15 @@ import { PiEnvelopeLight, PiShoppingCartThin, PiHeart } from "react-icons/pi";
 import { IoLogoInstagram, IoIosArrowDown } from "react-icons/io";
 import { FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
 import { BiUser, BiSearch } from "react-icons/bi";
+import { useCart } from "../context/CartContext";
+import { CartProvider } from "../context/CartContext";
+
 
 const Navbar = () => {
+  const { cartCount } = useCart();
+
   return (
+    <CartProvider>
     <header className="w-full">
       {/* Top Bar - Hidden on Mobile */}
       <div className="bg-[#252B42] text-white text-sm hidden md:flex justify-between items-center py-2 px-4">
@@ -46,7 +52,7 @@ const Navbar = () => {
       <nav className="bg-white shadow">
         <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-4">
           {/* Logo */}
-          <div className="text-lg font-bold text-[#252B42]">Bandage</div>
+          <div className="text-lg font-bold text-[#252B42]">StitchHub</div>
 
           {/* Desktop Navigation Menu */}
           <ul className="hidden md:flex space-x-6">
@@ -62,8 +68,13 @@ const Navbar = () => {
             <li>
               <Link href="/aboutus" className="hover:text-blue-600">About</Link>
             </li>
-            <li>
-              <Link href="/blog" className="hover:text-blue-600">Blog</Link>
+            <Link href="/cart"
+           className="hover:text-blue-600 flex items-center">
+            Cart ({cartCount})
+          
+        </Link>
+        <li>
+              <Link href="/checkout" className="hover:text-blue-600">checkout</Link>
             </li>
             <li>
               <Link href="/contact" className="hover:text-blue-600">Contact</Link>
@@ -81,9 +92,9 @@ const Navbar = () => {
             <a href="#" className="flex items-center hover:text-blue-600">
               <BiSearch />
             </a>
-            <a href="#" className="flex items-center hover:text-blue-600">
-              <PiShoppingCartThin className="mr-1" /> 1
-            </a>
+            <Link href="/cart" className="flex items-center hover:text-blue-600">
+      <PiShoppingCartThin className="mr-1" /> 1
+    </Link>
             <a href="#" className="flex items-center hover:text-blue-600">
               <PiHeart className="mr-1" /> 1
             </a>
@@ -95,6 +106,9 @@ const Navbar = () => {
           <ul className="space-y-4 text-center text-gray-700">
             <li>
               <Link href="/" className="hover:text-blue-600">Home</Link>
+            </li>
+            <li>
+              <Link href="/cart" className="hover:text-blue-600">Home</Link>
             </li>
             <li>
               <Link href="/product" className="hover:text-blue-600">Product</Link>
@@ -109,6 +123,7 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
+    </CartProvider>
   );
 };
 

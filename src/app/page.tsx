@@ -5,8 +5,10 @@ import Footer from './Component/Footer'
 import Editorpick from './Component/Editiorpick'
 import Summer20 from './Component/Summer20'
 import Neutraluniverse from './Component/Neutraluniverse'
-import Featureproduct from './Component/Featureproduct'
+
 import Featureblogpost from './Component/Featureblogpost'
+import ProductPage from './Component/productpage'
+
 
 
 
@@ -14,10 +16,10 @@ function page() {
   return (
     <div>
     
-  <Navbar/>
+   
   <Hero/>
  <Editorpick/>
- <Featureproduct/>
+<ProductPage/>
   <Summer20/>
   <Neutraluniverse/>
   <Featureblogpost/>
@@ -25,6 +27,7 @@ function page() {
 
  
   <Footer/>
+
     
     </div>
   )

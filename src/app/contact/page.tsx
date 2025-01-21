@@ -1,5 +1,5 @@
 import React from 'react'
-import Header2 from '../Component/Aboutus/Header2'
+
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import { IoMdArrowDown } from "react-icons/io";
@@ -9,7 +9,7 @@ import Footer from '../Component/Footer';
 function contact() {
   return (
     <div>
-      <Header2/>
+     
     {/* ///////////hero section///////////// */}
     <div className="flex flex-col justify-center items-center w-full h-[716px] bg-cover bg-center bg-[url('/images/background.png')]">
     <div className="flex flex-col justify-center items-start w-full max-w-[1044px] text-black px-8 py-12">
