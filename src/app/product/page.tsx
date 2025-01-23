@@ -1,14 +1,14 @@
 
 import Footer from '../Component/Footer';
 import Image from 'next/image';
-import Header from '../Component/shop/Header';
+
 import { IoIosArrowForward } from "react-icons/io";
 import Logos from '../Component/shop/Logos';
 
 function page() {
   return (
     <div>
-      <Header />
+    
       {/*..................... First Section with Gray Background .......................  */}
       <div className="font-sans">
         <div className="container mx-auto px-4 py-8 bg-gray-100">
