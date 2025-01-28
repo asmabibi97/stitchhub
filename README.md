@@ -1,4 +1,5 @@
 # StitchHub - Hackathon Progress  
+the reason if comiting my code late is i got an issue with my github that deleted my recent work and the repo i was working before where i submitted all my work timely alhamdulliah i recover my code using git revert and create a new repo of my work 
 
 **Welcome to StitchHub**, an e-commerce platform built during the **Marketplace Builder Hackathon 2025**. This project showcases the development of a fully functional, responsive, and scalable marketplace using **Next.js** and **Sanity CMS**.  
 
